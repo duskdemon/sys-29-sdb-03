@@ -1,0 +1,20 @@
+http:
+  port: "9200"
+path:
+  data: /bitnami/elasticsearch/data
+transport:
+  port: "9300"
+network:
+  host: 172.18.0.3
+  publish_host: 172.18.0.3
+  bind_host: 0.0.0.0
+node:
+  name: 969792956d20
+discovery:
+  type: single-node
+xpack:
+  security:
+    enabled: "false"
+  ml:
+    enabled: "false"
+cluster.name: "dusk-elasticsearch"
